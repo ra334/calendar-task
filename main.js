@@ -100,7 +100,7 @@ window.onload = function(){
         popupElement.style.display = "flex"
     })
 
-    function buttonSave() {
+    saveButton.addEventListener('click', () => {
         const date = dateElement.value
         const time = timeElement.value
         const text = textElement.value
@@ -114,9 +114,7 @@ window.onload = function(){
 
         saveRecord(id, date, time, text)
         alert('Record saved')
-    }
+    })
 
     displayRecords()
-
-    saveButton.onclick = buttonSave
 }
