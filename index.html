@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calendar</title>
 </head>
 <body>
     <script src="./main.js"></script>
-    <div class="records" id="records">
+    <div class="main">
+        <div class="records" id="records">
 
-    </div>
-    <br>
-    <input type="date" id="date">
-    <input type="time" id="time">
-    <br>
-    <br>
-    <input type="text" id="text">
-    <br>
-    <br>
-    <button id="save">Save</button>
-    <button id="edit">Edit</button>
-    <button id="delete">Delete</button>
+        </div>
 
-    <div class="dialog">
-        
+        <div class="main__inputs">
+            <input class="main__input" type="date" id="date">
+        </div>
+
+        <div class="main__buttons">
+            <button class="main__button" id="save">Save</button>
+            <button class="main__button" id="edit">Edit</button>
+            <button class="main__button" id="delete">Delete</button>
+        </div>
+
+        <div class="popup__wrapper">
+            <div id="pop-up" class="pop-up">
+                <input class="main__input" type="time" id="time">
+                <input class="main__input" type="text" id="text" value="text">
+                <button class="main__button" id="pop-up-button">Ok</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
