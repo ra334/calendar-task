@@ -53,8 +53,9 @@ body {
 
 .popup__wrapper {
     position: absolute;
+    left: 50%;
     top: 50%;
-    left: 28%;
+    transform: translate(-50%,-50%);
 }
 
 .pop-up {
@@ -63,6 +64,6 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: rgb(103, 103, 103);
-    padding: 20px;
+    padding: 30px;
     display: none;
 }
